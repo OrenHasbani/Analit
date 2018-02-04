@@ -5,7 +5,9 @@
     import io.analit.interceptors.SpringRequestInterceptor;
     import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
     import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+    import org.springframework.context.annotation.Configuration;
     
+    @Configuration
     public class ServiceConfiguration extends WebMvcConfigurerAdapter {
 
         @Autowired

@@ -1,6 +1,6 @@
-package io.analit.utils;
+package io.benchuk.utils;
 
-import io.analit.models.ApiEvent;
+import io.benchuk.models.ApiEvent;
 import lombok.experimental.UtilityClass;
 import org.springframework.util.DigestUtils;
 import org.springframework.util.StringUtils;

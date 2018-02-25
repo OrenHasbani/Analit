@@ -1,4 +1,4 @@
-package io.analit.models;
+package io.benchuk.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

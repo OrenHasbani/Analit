@@ -1,6 +1,6 @@
-package io.analit.services;
+package io.benchuk.services;
 
-import io.analit.models.ApiEvent;
+import io.benchuk.models.ApiEvent;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

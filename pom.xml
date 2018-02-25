@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.oren.hasbani</groupId>
-    <artifactId>analit</artifactId>
+    <artifactId>benchuk</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Analit</name>
+    <name>Benchuk</name>
     <description>A library for..</description>
-    <url>http://github.com/OrenHasbani/Analit</url>
+    <url>http://github.com/OrenHasbani/Benchuk</url>
 
     <!-- Inherit defaults from Spring Boot -->
     <parent>
@@ -35,9 +35,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/OrenHasbani/Analit.git</connection>
-        <developerConnection>scm:git:ssh://github.com:OrenHasbani/Analit.git</developerConnection>
-        <url>http://github.com/OrenHasbani/Analit/tree/master</url>
+        <connection>scm:git:git://github.com/OrenHasbani/Benchuk.git</connection>
+        <developerConnection>scm:git:ssh://github.com:OrenHasbani/Benchuk.git</developerConnection>
+        <url>http://github.com/OrenHasbani/Benchuk/tree/master</url>
     </scm>
 
     <properties>
@@ -48,6 +48,7 @@
         <lombok.version>1.16.20</lombok.version>
         <slf4j.version>1.7.25</slf4j.version>
         <feign.version>9.5.0</feign.version>
+        <spring.cloud.version>1.2.4.RELEASE</spring.cloud.version>
     </properties>
 
     <dependencies>
@@ -89,6 +90,14 @@
             <artifactId>httpclient</artifactId>
             <version>4.5.3</version>
         </dependency>
+
+        <!-- fegin client -->
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>${spring.cloud.version}</version>
+        </dependency>
     </dependencies>
 
     <distributionManagement>
@@ -115,11 +124,11 @@
                     <version>2.10.4</version>
                 </plugin>
 
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-gpg-plugin</artifactId>
-                    <version>1.6</version>
-                </plugin>
+                <!--<plugin>-->
+                    <!--<groupId>org.apache.maven.plugins</groupId>-->
+                    <!--<artifactId>maven-gpg-plugin</artifactId>-->
+                    <!--<version>1.6</version>-->
+                <!--</plugin>-->
 
                 <plugin>
                     <groupId>org.sonatype.plugins</groupId>
@@ -157,19 +166,19 @@
                 </executions>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-gpg-plugin</artifactId>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>sign-artifacts</id>-->
+                        <!--<phase>verify</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>sign</goal>-->
+                        <!--</goals>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>

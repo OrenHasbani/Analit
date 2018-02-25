@@ -1,9 +1,8 @@
-package io.analit.models;
+package io.benchuk.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Builder
 @AllArgsConstructor

@@ -1,7 +1,7 @@
-package io.analit.interceptors;
+package io.benchuk.interceptors;
 
-import io.analit.services.DataCollector;
-import io.analit.models.ApiEvent;
+import io.benchuk.services.DataCollector;
+import io.benchuk.models.ApiEvent;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
-import static io.analit.Consts.ANONYMOUS_SERVICE;
-import static io.analit.Consts.SERVICE_NAME_HTTP_HEADER;
+import static io.benchuk.Consts.ANONYMOUS_SERVICE;
+import static io.benchuk.Consts.SERVICE_NAME_HTTP_HEADER;
 
 @Component
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))

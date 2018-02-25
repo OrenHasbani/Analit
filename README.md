@@ -1,8 +1,8 @@
-# Analit
+# Benchuk
 
     import feign.RequestInterceptor;
-    import io.analit.interceptors.FeignRequestInterceptor;
-    import io.analit.interceptors.SpringRequestInterceptor;
+    import io.benchuk.interceptors.FeignRequestInterceptor;
+    import io.benchuk.interceptors.SpringRequestInterceptor;
     import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
     import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
     import org.springframework.context.annotation.Configuration;
